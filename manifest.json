@@ -1,17 +1,53 @@
 {
   "name": "ميزانية البيت",
-  "short_name": "الميزانية",
-  "description": "ميزانية لكل بيت · لكل طالب · لكل محاسب — اشتراك مرة واحدة",
-  "start_url": "./index.html",
+  "short_name": "ميزانية البيت",
+  "description": "ميزانية لكل بيت، لكل طالب، ولكل محاسب — احسب مصاريفك بدون إنترنت. اشتراك مرة واحدة 99 جنيه.",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "orientation": "portrait",
   "background_color": "#F6EFDF",
   "theme_color": "#C9A24B",
   "lang": "ar",
   "dir": "rtl",
+  "categories": ["finance", "productivity"],
   "icons": [
-    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "إضافة مصروف",
+      "url": "./?action=expense",
+      "description": "سجل مصروف جديد بسرعة"
+    },
+    {
+      "name": "إضافة دخل",
+      "url": "./?action=income",
+      "description": "سجل دخل جديد"
+    }
   ]
 }
